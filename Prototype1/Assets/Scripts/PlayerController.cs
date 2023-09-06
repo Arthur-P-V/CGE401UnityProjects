@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Arthur Peterson-Veatch
+ * Prototype 1
+ * Script to manage player input for prototype 1
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

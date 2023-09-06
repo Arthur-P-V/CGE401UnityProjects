@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Arthur Peterson-Veatch
+ * Prototype 1
+ * Script to trigger loss in ScoreManager for prototype 1
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

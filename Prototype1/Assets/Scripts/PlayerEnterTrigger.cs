@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Arthur Peterson-Veatch
+ * Prototype 1
+ * Deprecated script to handle trigger entry behavior for prototype 1
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

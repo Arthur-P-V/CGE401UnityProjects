@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Arthur Peterson-Veatch
+ * Prototype 1
+ * Script to increment score on trigger entry for prototype 1
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
