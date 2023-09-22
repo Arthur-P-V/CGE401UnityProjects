@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Arthur Peterson-Veatch
+* Challenge 2
+* This script controls the detection of collisions and increment of score
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
