@@ -1,5 +1,9 @@
-﻿//TIMESTAMP 1:23:02 ON THE VIDEO IS WHERE YOU ARE
-
+﻿/*
+	* Arthur Peterson-Veatch
+	* Target.cs
+	* Assignment 8
+	* Script to define target behavior
+*/
 
 using System.Collections;
 using System.Collections.Generic;
@@ -32,6 +36,8 @@ public class Target : MonoBehaviour
         transform.position = RandomSpawnPos();
 
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+
     }
 
     private Vector3 RandomSpawnPos()
@@ -57,14 +63,22 @@ public class Target : MonoBehaviour
     }
 
     private void OnMouseDown() {
-        gameManager.UpdateScore(pointValue);
 
-        Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+        if (gameManager.isGameActive) { 
+            gameManager.UpdateScore(pointValue);
 
-        Destroy(gameObject);
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+
+            Destroy(gameObject);
+        }
+        
     }
 
-    private void OnTriggerEnter(Collider other) { 
+    private void OnTriggerEnter(Collider other) {
+        if (!gameObject.CompareTag("Bad")) { 
+            gameManager.GameOver();
+        }
+        
         Destroy(gameObject);
     }
 }
